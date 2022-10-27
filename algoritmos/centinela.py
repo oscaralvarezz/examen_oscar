@@ -1,9 +1,11 @@
 def centinela(lista, buscado):
     "Método de busqueda (secuencial)"
     posicion = -1
-    i = 0
-    while( i < len(lista)) and (posicion = -1):
-        if (lista[i]= buscado):
+    for i in range(0,len(lista)):
+        if (lista[i]== buscado):
             posicion = i
-        i += 1
+            break
     return posicion
+
+lista = (1,4,6,3,7)
+print(centinela(lista,6))
